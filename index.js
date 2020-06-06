@@ -1,11 +1,12 @@
 //test case given for assignment part 1
 let a = [1,7,7,3,9,9,9,4,9]
-//extra text case b
+//text case b
 let b = [1,16,16,5,3,3,3,3,3,4,7,6,8]
-
+//test case C
+let c = [1,1,1,2,2,2,2,3,3,3,4,4,4]
 
 function longestRow (arr){
-    var i,
+    let i,
       temp,
       stretch,
       longestStretchValue,
@@ -36,3 +37,4 @@ function longestRow (arr){
 
 longestRow(a)
 longestRow(b)
+longestRow(c)
