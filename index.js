@@ -1,11 +1,11 @@
 //test case given for assignment part 1
 let a = [1,7,7,3,9,9,9,4,9]
-//text case b
+//test case b
 let b = [1,16,16,5,3,3,3,3,3,4,7,6,8]
 //test case C
 let c = [1,1,1,2,2,2,2,3,3,3,4,4,4]
 
-function longestRow (arr){
+const longestRow = arr => {
     let i,
       temp,
       stretch,
@@ -13,7 +13,7 @@ function longestRow (arr){
       length = arr.length,
       longestStretch = 0;
 
-    for(i = 0; i < length; i++) {
+    for(i = 0; i < length; ++i) {
         // check the value of the current value against the last
         if(temp != null && temp == arr[i]) {
             // you have a matching value add 1 to the stretch
